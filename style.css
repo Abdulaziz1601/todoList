@@ -13,19 +13,19 @@ body {
     min-height: 100vh;
 }
 
-header h1 {
+.title {
     font-size: 2rem;
 }
 
-header,
-form {
+.header,
+.form {
     min-height: 20vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center; 
 }
-input {
+.todo-input {
     width: 100%;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
@@ -34,15 +34,15 @@ input {
     max-width: 35vw;
     margin: 0 auto;
 }
-form input,
-form button {
+.todo-input,
+.todo-button {
     padding: 0.5rem;
     font-size: 2rem;
     border: none;
     background: #fff;
 } 
 
-form button {
+.todo-button {
     color: #69bff8;
     background: #fff;
     cursor: pointer;
@@ -51,10 +51,11 @@ form button {
     border-top-right-radius: 10px;
 }
 
-form button:hover {
+.todo-button:hover {
     background: #69bff8;
     color: white;
 }
+
 .todo-container {
     margin-top: 10px;
 }

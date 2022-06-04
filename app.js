@@ -33,8 +33,9 @@ document.addEventListener('DOMContentLoaded', () => {
     //Functions
     function createTodoList(tasks, container) {
         container.innerHTML = '';
-
+        
         tasks.forEach((element) => {
+            
             container.innerHTML += `
                 <li class="todo-task">
                     ${element}
@@ -48,8 +49,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         document.querySelectorAll('.delete').forEach((btn, i) => {
             btn.addEventListener('click', () => {
-                btn.parentElement.parentElement.remove();
+                btn.parentElement.remove();
                 console.log(todoDB.tasks.splice(i, 1));
+
                 createTodoList(todoDB.tasks, container);
             });
         });
